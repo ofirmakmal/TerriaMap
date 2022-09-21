@@ -7,13 +7,6 @@ spec:
   - name: http
     port: 80
     targetPort: 3001
-{{- if .Values.global.exposeNodePorts }}
-{{- if .Values.global.nodePort }}
-    nodePort: {{ .Values.nodePort }}
-{{- end }}
-  type: NodePort
-{{- else }}
-  type: LoadBalancer
-{{- end }}
+  type: ClusterIP
   selector:
     service: {{ printf "%s-%s" .Release.Name "terriamap" | trunc 63 | trimSuffix "-" | quote }}
