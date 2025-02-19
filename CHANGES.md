@@ -1,8 +1,75 @@
 # Change Log
 
-### The Next Release
+#### 0.3.0
 
-- [The next improvement]
+**2025-02-18**
+
+- **Breaking changes:**
+  - Updated TerriaJS to `8.8.0`
+    - Upgrades Webpack to version 5
+    - Upgraded sass to version 1.80+
+    - [Full list of TerriaJS changes](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#880---2025-02-18)
+  - Converted files from CJS to ESM style
+    - This includes `entry.js`, `index.js` - if you have changed these files it is likely that you will get a merge conflict when upgrading. Please [reach out to us](https://github.com/terriajs/terriajs/discussions) if you need help.
+    - Replaced webpack aliases `~terriajs-variables` and `~terriajs` in css imports with relative paths. This simplifies the webpack configuration.
+
+#### 0.2.4
+
+**2024-12-19**
+
+- Updated TerriaJS to `8.7.11`
+  - Add `clampToGround` to `KmlCatalogItemTraits`
+  - Add `dataSourceUri` to `KmlCatalogItemTraits`
+
+#### 0.2.3
+
+**2024-11-29**
+
+- Updated TerriaJS to `8.7.10`
+  - Added OpenStreetMap as a default map
+  - Upgraded gulp to version 5
+    - Gulp 5 defaults to encoding copied files as utf-8, had turn off encoding by setting `encoding: false` to correctly copy binary assets from dependencies.
+  - Bunch of other packages upgraded, [see CHANGES](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#8710---2024-11-29).
+
+### `0.2.2`
+
+**2024-11-22**
+
+- Updated TerriaJS to `8.7.9`.
+  - **Breaking changes:**
+    - Removed the basemaps - positron, darkmatter and black-marble - from the default settings. The Carto ones are no longer free and requires an [Enterprise or Grantee license](https://carto.com/basemaps). If you have the appropriate license you can add them via your [initialization file](https://docs.terria.io/guide/customizing/initialization-files/#basemaps). [Example configuration](https://gist.github.com/na9da/ef7871afee7cbe3d0a95e5b6351834c9).
+  - Added [I3SCatalogItem](https://docs.terria.io/guide/connecting-to-data/catalog-type-details/i3s/)
+  - Added [CogCatalogItem](https://docs.terria.io/guide/connecting-to-data/catalog-type-details/cog/)
+
+### `0.2.1`
+
+**2024-08-07**
+
+- Updated TerriaJS to `8.7.5`.
+
+### `0.1.2`
+
+**2024-05-02**
+
+- Updated TerriaJS to `8.7.1`.
+
+### `0.1.1`
+
+**2024-03-05**
+
+- Updated TerriaJS to `8.5.1`.
+  - **Breaking changes:**
+    - **Upgraded Cesium to version 6.2.0**
+    - **Upgraded Typescript to version 5.2.x**
+  - For full list of changes, see [terriajs/CHANGES.md](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md)
+- Replaced `node-sass` with `sass`. (both packages expose the same JavaScript API, so no changes should be required)
+- Increase NodeJS minimum version to 16
+
+### ~`0.1.0`~
+
+**2024-02-08**
+
+Failed release workflow
 
 ### `0.0.9`
 

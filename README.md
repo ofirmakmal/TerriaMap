@@ -8,7 +8,16 @@ This is a complete website built using the TerriaJS library. See the [TerriaJS R
 
 For instructions on how to deploy your map, see [the documentation here](doc/deploying/deploying-to-aws.md).
 
+To get in touch:
+
+- Join the [TerriaJS Github Discussion](https://github.com/TerriaJS/terriajs/discussions)
+- Raise issues in the [TerriaJS Github issue tracker](https://github.com/TerriaJS/terriajs/issues/new)
+
 ---
+
+## Major announcements
+
+Following is a list of major announcements and upgrades that may affect users maintaining a fork (copied from [TerriaJS announcements](https://github.com/TerriaJS/terriajs/discussions/categories/announcements)). For a full list of changes to TerriaMap, including the latest versions of TerriaJS included with each release please refer to [CHANGES.md](https://github.com/TerriaJS/TerriaMap/blob/main/CHANGES.md).
 
 ### We have released TerriaJS v8.3.0 (2023-05-22)
 
